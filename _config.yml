@@ -6,11 +6,11 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-locale                   : "zh-CN"
-title                    : "谢钦磊 | Qinlei Xie"
+locale                   : "en-US"
+title                    : "Qinlei Xie"
 title_separator          : "-"
-name                     : &name "谢钦磊"
-description              : &description "大连理工大学24级本科生 | 研究兴趣：LLM赋能的空间推理与记忆"
+name                     : &name "Qinlei Xie"
+description              : &description "Undergraduate at Dalian University of Technology | Research Interests: LLM-empowered Spatial Reasoning and Memory"
 url                      : https://Qinlei-Xie.github.io
 baseurl                  : ""
 repository               : "Qinlei-Xie/Qinlei-Xie.github.io"
@@ -27,11 +27,11 @@ comments:
 # Site Author
 author:
   avatar           : "profile.png"
-  name             : "谢钦磊"
+  name             : "Qinlei Xie"
   pronouns         : "he/him"
-  bio              : "大连理工大学24级本科生<br/>研究方向：LLM空间推理与记忆"
+  bio              : "Undergraduate at DUT<br/>LLM Spatial Reasoning & Memory"
   location         : "Dalian, China"
-  employer         : "大连理工大学"
+  employer         : "Dalian University of Technology"
   uri              : 
   email            : "3440119050@qq.com"
 
@@ -46,11 +46,11 @@ author:
 
   # Social networks
   github           : "Qinlei-Xie"
-  linkedin         : # 如果有的话填写你的 LinkedIn 用户名
-  twitter          : # 如果有的话填写你的 Twitter 用户名
-  instagram        : # 如果有的话
-  weibo            : # 如果有微博的话填写
-  zhihu            : # 如果有知乎的话填写
+  linkedin         : # Your LinkedIn username if you have one
+  twitter          : # Your Twitter username if you have one
+  instagram        : # If you have one
+  weibo            : # If you have one
+  zhihu            : # If you have one
 
 # Reading Files
 include:
