@@ -6,7 +6,7 @@ author_profile: true
 classes: wide   # 可选：让正文更宽一点，更像 yimingli-page 那种“开阔感”
 ---
 
-## 👋 About Me
+## About Me
 
 Hello! 👋 I am Qinlei Xie (谢钦磊), an undergraduate student (Class of 2024) at Dalian University of Technology, majoring in Big Data Management and Applications.
 
@@ -35,7 +35,4 @@ Meanwhile, I am interested in memory reliability — the human brain should not 
 - **2025.08** Started research training with Prof. Weiwen Liu at SJTU APEX Lab  
 - **2024.09** Enrolled at Dalian University of Technology  
 
-## 📬 Contact
 
-- **Email:** 3440119050@qq.com  
-- **GitHub:** https://github.com/Qinlei-Xie
