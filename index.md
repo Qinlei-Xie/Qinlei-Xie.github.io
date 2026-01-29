@@ -3,12 +3,12 @@ layout: single
 title: "Qinlei Xie"
 permalink: /
 author_profile: true
-classes: wide   # 可选：让正文更宽一点，更像 yimingli-page 那种“开阔感”
+classes: wide
 ---
 
 ## About Me
 
-Hello! 👋 I am Qinlei Xie (谢钦磊), an undergraduate student (Class of 2024) at Dalian University of Technology, majoring in Big Data Management and Applications.
+Hello! 👋 I am Qinlei Xie (谢钦磊), an undergraduate at Dalian University of Technology, majoring in Big Data Management and Applications (expected graduation: 2028).
 
 I am seeking PhD positions for Fall 2028.
 
@@ -26,13 +26,11 @@ Meanwhile, I am interested in memory reliability — the human brain should not 
 
 ## 🧪 Research Experience
 
-- **Research Intern**, Prof. Yiming Li’s lab, 2025.12 – Present  
-- **Research Training**, Prof. Weiwen Liu, APEX Lab, Shanghai Jiao Tong University, 2025.08 – Present
+- **Research Intern**, working with Yiming Li, 2025.12 – Present
+- **Research Training**, working with Weiwen Liu, APEX Lab, Shanghai Jiao Tong University, 2025.08 – Present
 
 ## 📰 News
 
-- **2025.12** Started research internship with Prof. Yiming Li  
-- **2025.08** Started research training with Prof. Weiwen Liu at SJTU APEX Lab  
-- **2024.09** Enrolled at Dalian University of Technology  
-
-
+- **2025.12** Started research internship with Yiming Li
+- **2025.08** Started research training with Weiwen Liu at SJTU APEX Lab
+- **2024.09** Enrolled at Dalian University of Technology
