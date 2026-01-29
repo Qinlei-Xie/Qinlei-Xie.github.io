@@ -1,11 +1,13 @@
-permalink: /
+---
+layout: single
 title: "Qinlei Xie"
 excerpt: "About me"
+permalink: /
 author_profile: true
 redirect_from:
-
-/about/
-/about.html
+  - /about/
+  - /about.html
+---
 
 
 About Me
