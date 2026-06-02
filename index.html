@@ -174,6 +174,12 @@
     border-color: rgba(255,255,255,0.15);
     background: rgba(255,255,255,0.06);
   }
+  .work-card {
+    min-height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
   .card-title {
     font-family: 'Inter', sans-serif;
@@ -193,7 +199,7 @@
   .tl-entry {
     position: relative;
     padding-left: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 14px;
   }
   .tl-entry::before {
     content: '';
@@ -208,13 +214,6 @@
     background: var(--accent);
     box-shadow: 0 0 8px rgba(96,165,250,0.4);
   }
-  .tl-entry .tl-date {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 10px;
-    color: var(--accent);
-    letter-spacing: 0.05em;
-    margin-bottom: 3px;
-  }
   .tl-entry .tl-role {
     font-family: 'Inter', sans-serif;
     font-size: 12px;
@@ -227,6 +226,16 @@
     font-size: 11px;
     color: rgba(233,226,216,0.45);
     line-height: 1.5;
+  }
+  .tl-entry a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(96,165,250,0.22);
+    transition: color 0.3s, border-color 0.3s;
+  }
+  .tl-entry a:hover {
+    color: var(--accent);
+    border-color: var(--accent);
   }
 
   /* Pub links */
@@ -481,7 +490,7 @@
         <svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
         GitHub
       </a>
-      <a href="files/cv.pdf" target="_blank">
+      <a href="files/Qinlei-Xie_CV.pdf" target="_blank">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
         CV
       </a>
@@ -498,24 +507,24 @@
         <div class="big-title">QINLEI
 XIE</div>
         <div class="body-text" style="margin-bottom: 14px;">
-          Exploring the intersection of <strong>spatial reasoning</strong>, <strong>world models</strong>, 
-          and <strong>embodied intelligence</strong>. Building AI systems that understand and navigate 
-          the physical world.
+          I aim to build <strong>physics-grounded causal world models</strong> that can truly understand 
+          the world and guide the development of <strong>robotics</strong> and 
+          <strong>spatial intelligence</strong>.
         </div>
         <div style="margin-top: 8px; display: flex; gap: 6px; flex-wrap: wrap;">
-          <span class="label-tag" data-hover="cube">Spatial Reasoning</span>
-          <span class="label-tag" data-hover="cube">World Models</span>
+          <span class="label-tag" data-hover="cube">Causal World Models</span>
+          <span class="label-tag" data-hover="cube">Physics-Grounded AI</span>
           <span class="label-tag" data-hover="cube">Embodied AI</span>
-          <span class="label-tag" data-hover="cube">Memory Systems</span>
-          <span class="label-tag" data-hover="cube">3D Vision</span>
+          <span class="label-tag" data-hover="cube">Robotics</span>
+          <span class="label-tag" data-hover="cube">Spatial Intelligence</span>
         </div>
       </div>
       <div class="text-block" style="right: 5%; top: 22%; max-width: 280px; text-align: right;">
         <div class="kicker" style="text-align: right;">Current / Status</div>
         <div class="body-text" style="text-align: right; margin-bottom: 14px;">
-          Research Intern at<br>
-          <strong>Tsinghua University</strong><br>
-          <span style="color: rgba(233,226,216,0.4);">College of AI · Prof. Yiming Li</span>
+          Current collaborations with<br>
+          <a href="https://openreview.net/profile?id=~Chen_Gao4" target="_blank" rel="noopener noreferrer"><strong>Dr. Chen Gao</strong></a><br>
+          <a href="https://yjzheng.com/" target="_blank" rel="noopener noreferrer"><strong>Prof. Yujia Zheng</strong></a> · <a href="https://yuzhiwei-v.github.io/" target="_blank" rel="noopener noreferrer"><strong>Zhiwei Yu</strong></a>
         </div>
         <div class="body-text" style="text-align: right;">
           Undergraduate at<br>
@@ -547,19 +556,22 @@ XIE</div>
           </div>
         </div>
         <div class="body-text">
-          I am a research intern working with <strong>Prof. Yiming Li</strong> at 
-          <strong>Tsinghua University</strong>, and completed research training with 
-          <strong>Prof. Weiwen Liu</strong> at <strong>SJTU APEX Lab</strong>.
+          I previously collaborated with <a href="https://yimingli-page.github.io/" target="_blank" rel="noopener noreferrer"><strong>Prof. Yiming Li</strong></a> at 
+          <strong>Tsinghua University</strong> and <a href="https://wwliu555.github.io/" target="_blank" rel="noopener noreferrer"><strong>Prof. Weiwen Liu</strong></a> at 
+          <strong>Shanghai Jiao Tong University</strong>. I am currently collaborating with 
+          <a href="https://openreview.net/profile?id=~Chen_Gao4" target="_blank" rel="noopener noreferrer"><strong>Dr. Chen Gao</strong></a>, 
+          <a href="https://yjzheng.com/" target="_blank" rel="noopener noreferrer"><strong>Prof. Yujia Zheng</strong></a>, and 
+          <a href="https://yuzhiwei-v.github.io/" target="_blank" rel="noopener noreferrer"><strong>Zhiwei Yu</strong></a>.
         </div>
         <div style="display: flex; gap: 10px; align-items: center; margin-top: 14px;">
-          <a href="files/cv.pdf" target="_blank" class="pub-link" style="font-size: 11px; padding: 5px 14px; display: inline-flex; align-items: center; gap: 6px;">
+          <a href="files/Qinlei-Xie_CV.pdf" target="_blank" class="pub-link" style="font-size: 11px; padding: 5px 14px; display: inline-flex; align-items: center; gap: 6px;">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm4 18H6V4h7v5h5v11zm-3-7v4H9v-4H6l6-6 6 6h-3z" transform="scale(1,-1) translate(0,-24)"/></svg>
             Download CV
           </a>
         </div>
         <div class="phd-banner">
-          <strong>Seeking PhD positions for Fall 2028</strong> in spatial reasoning, 
-          world models, and embodied AI.
+          <strong>Seeking PhD positions for Fall 2028</strong> in physics-grounded 
+          causal world models, robotics, and spatial intelligence.
         </div>
         <div style="margin-top: 14px;">
           <div class="kicker">Education</div>
@@ -571,20 +583,33 @@ XIE</div>
         </div>
       </div>
       <div class="text-block" style="right: 5%; top: 18%; max-width: 320px;">
-        <div class="kicker">Experience / Timeline</div>
+        <div class="kicker">Experience / Collaborations</div>
         <div class="section-title">RESEARCH
 EXPERIENCE</div>
         <div class="tl-entry">
-          <div class="tl-date">2025.12 – Present</div>
-          <div class="tl-role">Research Intern, Tsinghua University</div>
-          <div class="tl-detail">Advisor: Prof. Yiming Li · College of AI</div>
+          <div class="tl-role">Dr. Chen Gao</div>
+          <div class="tl-detail">Collaborating with <a href="https://openreview.net/profile?id=~Chen_Gao4" target="_blank" rel="noopener noreferrer">Dr. Chen Gao</a></div>
+          <div class="tl-detail" style="color: rgba(233,226,216,0.35);">Embodied AI, spatial reasoning, world models</div>
+        </div>
+        <div class="tl-entry">
+          <div class="tl-role">Prof. Yujia Zheng</div>
+          <div class="tl-detail">Collaborating with <a href="https://yjzheng.com/" target="_blank" rel="noopener noreferrer">Prof. Yujia Zheng</a></div>
+          <div class="tl-detail" style="color: rgba(233,226,216,0.35);">Causal representation learning, trustworthy AI</div>
+        </div>
+        <div class="tl-entry">
+          <div class="tl-role">Zhiwei Yu</div>
+          <div class="tl-detail">Collaborating with <a href="https://yuzhiwei-v.github.io/" target="_blank" rel="noopener noreferrer">Zhiwei Yu</a></div>
+          <div class="tl-detail" style="color: rgba(233,226,216,0.35);">Causal world models, embodied planning</div>
+        </div>
+        <div class="tl-entry">
+          <div class="tl-role">Tsinghua University</div>
+          <div class="tl-detail">Collaborated with <a href="https://yimingli-page.github.io/" target="_blank" rel="noopener noreferrer">Prof. Yiming Li</a></div>
           <div class="tl-detail" style="color: rgba(233,226,216,0.35);">VLM agents, video game benchmarks, spatial reasoning</div>
         </div>
         <div class="tl-entry">
-          <div class="tl-date">2025.08 – 2026.03</div>
-          <div class="tl-role">Research Training, SJTU APEX Lab</div>
-          <div class="tl-detail">Advisor: Prof. Weiwen Liu</div>
-          <div class="tl-detail" style="color: rgba(233,226,216,0.35);">LLM spatial reasoning, memory systems</div>
+          <div class="tl-role">Shanghai Jiao Tong University</div>
+          <div class="tl-detail">Collaborated with <a href="https://wwliu555.github.io/" target="_blank" rel="noopener noreferrer">Prof. Weiwen Liu</a></div>
+          <div class="tl-detail" style="color: rgba(233,226,216,0.35);">LLM spatial reasoning, causal world models</div>
         </div>
       </div>
     </div>
@@ -596,45 +621,37 @@ EXPERIENCE</div>
         <div class="section-title">RESEARCH
 INTERESTS</div>
         <div class="body-text" style="margin-bottom: 18px;">
-          My research focuses on building <strong>spatial world models</strong> for AI, 
-          enabling them to learn and reason from spatial information just like humans do.
-          Meanwhile, I am interested in <strong>memory reliability</strong> — AI's memory systems 
-          should not produce confused hallucinations.
+          My research focuses on building <strong>physics-grounded causal world models</strong> 
+          for AI. I believe these models can truly understand the world and guide the 
+          development of <strong>robotics</strong> and <strong>spatial intelligence</strong>.
         </div>
         <div class="rc-mini">
           <span class="rc-icon">🌐</span>
           <div>
-            <div class="rc-label">Spatial Reasoning</div>
-            <div class="rc-desc">How can AI understand 3D environments, infer spatial relationships, and build coherent maps?</div>
+            <div class="rc-label">Causal World Models</div>
+            <div class="rc-desc">Building models that connect perception, action, and cause-effect structure in the physical world.</div>
           </div>
         </div>
         <div class="rc-mini">
           <span class="rc-icon">🧠</span>
           <div>
-            <div class="rc-label">World Models</div>
-            <div class="rc-desc">Building internal simulations that allow AI to predict, plan, and imagine unseen scenarios.</div>
+            <div class="rc-label">Physics-Grounded AI</div>
+            <div class="rc-desc">Grounding reasoning in physical constraints so AI can predict, plan, and act with real-world consistency.</div>
           </div>
         </div>
         <div class="rc-mini">
           <span class="rc-icon">🤖</span>
           <div>
-            <div class="rc-label">Embodied AI</div>
-            <div class="rc-desc">Grounding intelligence in physical or simulated agents that interact with and learn from the real world.</div>
-          </div>
-        </div>
-        <div class="rc-mini">
-          <span class="rc-icon">💾</span>
-          <div>
-            <div class="rc-label">Memory Systems</div>
-            <div class="rc-desc">Designing reliable memory architectures that avoid hallucinations and maintain consistent knowledge.</div>
+            <div class="rc-label">Robotics & Spatial Intelligence</div>
+            <div class="rc-desc">Using world understanding to guide robots and spatially intelligent agents in complex environments.</div>
           </div>
         </div>
       </div>
       <div class="text-block" style="right: 5%; top: 18%; max-width: 340px;">
         <div class="kicker">Latest News</div>
         <div class="body-text">
-          <span class="accent-text">2026.03</span> — <strong>GameVerse</strong> is out! A comprehensive video game benchmark for VLMs with reflect-and-retry paradigm.<br>
-          <span class="accent-text">2025.12</span> — Started research at Tsinghua University with Prof. Yiming Li.
+          <span class="accent-text">2026.06</span> — <strong>Causal Plan</strong> is online, moving embodied planning from token prediction toward physically grounded causal reasoning.<br>
+          <span class="accent-text">2026.03</span> — <strong>GameVerse</strong> was accepted to ICML 2026.
         </div>
       </div>
     </div>
@@ -644,19 +661,38 @@ INTERESTS</div>
       <div class="text-block wide" style="left: 5%; top: 16%; max-width: 440px;">
         <div class="kicker">Publications / Selected Work</div>
         <div class="section-title">PUBLICATIONS</div>
-        <div class="card" style="padding: 18px;">
+        <div class="card work-card" style="padding: 15px 16px;">
           <div style="display: flex; gap: 4px; margin-bottom: 8px;">
-            <span style="font-family:'JetBrains Mono',monospace; font-size:9px; padding:2px 8px; border-radius:4px; background:rgba(96,165,250,0.1); color:var(--accent); border:1px solid rgba(96,165,250,0.2);">PREPRINT 2026</span>
+            <span style="font-family:'JetBrains Mono',monospace; font-size:9px; padding:2px 8px; border-radius:4px; background:rgba(96,165,250,0.1); color:var(--accent); border:1px solid rgba(96,165,250,0.2);">ARXIV 2026</span>
           </div>
-          <div class="card-title" style="font-size: 14px; line-height: 1.4; margin-bottom: 6px;">
+          <div class="card-title" style="font-size: 13.5px; line-height: 1.35; margin-bottom: 6px;">
+            Token Predictors Are Not Planners: Building Physically Grounded Causal Reasoners
+          </div>
+          <div class="card-sub" style="margin-bottom: 8px; line-height: 1.45;">
+            Zheng Lu*, Mingqi Gao*, <span style="color: var(--accent); font-weight: 500;">Qinlei Xie*</span>, Wanqi Zhong, Hanwen Cui, Heng Cao, Zirui Song, Yifan Yang, Chong Luo, Bei Liu†, Yiming Li†
+          </div>
+          <div style="font-family:'Inter',sans-serif; font-size:11px; font-style:italic; color:rgba(233,226,216,0.3); margin-bottom: 10px;">
+            arXiv preprint, 2026 · Equal contribution
+          </div>
+          <div>
+            <a class="pub-link" href="https://arxiv.org/abs/2606.01810" target="_blank">arXiv</a>
+            <a class="pub-link" href="https://arxiv.org/pdf/2606.01810" target="_blank">PDF</a>
+            <a class="pub-link" href="https://github.com/THUSI-Lab/Causal-Reasoner" target="_blank">Code</a>
+          </div>
+        </div>
+        <div class="card work-card" style="padding: 15px 16px;">
+          <div style="display: flex; gap: 4px; margin-bottom: 8px;">
+            <span style="font-family:'JetBrains Mono',monospace; font-size:9px; padding:2px 8px; border-radius:4px; background:rgba(96,165,250,0.1); color:var(--accent); border:1px solid rgba(96,165,250,0.2);">ICML 2026</span>
+          </div>
+          <div class="card-title" style="font-size: 13.5px; line-height: 1.35; margin-bottom: 6px;">
             GameVerse: Can Vision-Language Models Learn from Video-based Reflection?
           </div>
-          <div class="card-sub" style="margin-bottom: 8px; line-height: 1.5;">
+          <div class="card-sub" style="margin-bottom: 8px; line-height: 1.45;">
             Kuan Zhang*, Dongchen Liu*, Qiyue Zhao, Jinkun Hou, Xinran Zhang, 
             <span style="color: var(--accent); font-weight: 500;">Qinlei Xie</span>, Miao Liu†, Yiming Li†
           </div>
           <div style="font-family:'Inter',sans-serif; font-size:11px; font-style:italic; color:rgba(233,226,216,0.3); margin-bottom: 10px;">
-            arXiv preprint, 2026
+            Accepted to ICML 2026
           </div>
           <div>
             <a class="pub-link" href="https://arxiv.org/abs/2603.06656" target="_blank">arXiv</a>
@@ -665,23 +701,36 @@ INTERESTS</div>
           </div>
         </div>
       </div>
-      <div class="text-block" style="right: 5%; top: 20%; max-width: 320px;">
-        <div class="kicker">Project Highlight</div>
-        <div class="section-title">GAMEVERSE</div>
-        <div class="body-text">
-          A comprehensive benchmark for evaluating <strong>Vision-Language Models</strong> 
-          in video game environments. Introduces a <strong>reflect-and-retry</strong> paradigm 
-          where models learn from their own gameplay failures through video-based reflection.
+      <div class="text-block" style="right: 5%; top: 16%; max-width: 330px;">
+        <div class="kicker">Project Highlights</div>
+        <div class="section-title">HIGHLIGHTS</div>
+        <div class="card work-card" style="padding: 15px 16px;">
+          <div>
+            <div class="card-title" style="font-family:'Playfair Display',serif; font-size:22px; line-height:1.05; letter-spacing:0.06em; text-transform:uppercase; margin-bottom:8px;">CAUSAL PLAN</div>
+            <div class="body-text" style="font-size: 12px; line-height: 1.75;">
+              A physically grounded causal reasoning framework for embodied planning, introducing 
+              <strong>Causal-Plan-Bench</strong> and <strong>Causal-Plan-1M</strong>.
+            </div>
+          </div>
+          <div>
+            <a href="https://arxiv.org/abs/2606.01810" target="_blank" class="pub-link" style="font-size: 11px; padding: 5px 14px;">
+              Read Paper →
+            </a>
+          </div>
         </div>
-        <div style="margin-top: 12px;">
-          <a href="https://gameverse-bench.github.io/" target="_blank" class="pub-link" style="font-size: 11px; padding: 5px 14px;">
-            Visit Project Page →
-          </a>
-        </div>
-      </div>
-      <div class="text-block" style="left: 5%; bottom: 110px; max-width: 380px;">
-        <div class="body-text" style="font-style: italic; color: rgba(233,226,216,0.3);">
-          More publications coming soon. Currently working on spatial reasoning and world model research at Tsinghua University.
+        <div class="card work-card" style="padding: 15px 16px;">
+          <div>
+            <div class="card-title" style="font-family:'Playfair Display',serif; font-size:22px; line-height:1.05; letter-spacing:0.06em; text-transform:uppercase; margin-bottom:8px;">GAMEVERSE</div>
+          <div class="body-text" style="font-size: 12px; line-height: 1.75;">
+            An <strong>ICML 2026</strong> benchmark for evaluating Vision-Language Models in video game environments, 
+            with a <strong>reflect-and-retry</strong> paradigm for learning from gameplay failures.
+          </div>
+          </div>
+          <div>
+            <a href="https://gameverse-bench.github.io/" target="_blank" class="pub-link" style="font-size: 11px; padding: 5px 14px;">
+              Visit Project →
+            </a>
+          </div>
         </div>
       </div>
     </div>
